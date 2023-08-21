@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() {               // loads the view
         super.viewDidLoad()
         configureView()
     }
     
-    func configureView() {
+    func configureView() {                      // rounds textfields and button
         usernameTextFeild.layer.cornerRadius = 30
         usernameTextFeild.clipsToBounds = true
         passwordTextField.layer.cornerRadius = 30
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         signinButton.clipsToBounds = true
     }
 
-    @IBAction func signIn(_ sender: Any) {
+    @IBAction func signIn(_ sender: Any) {   // shows content of texfields in terminal
         print(usernameTextFeild.text!)
         print(passwordTextField.text!)
     }
