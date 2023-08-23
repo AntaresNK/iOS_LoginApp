@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         signinButton.clipsToBounds = true
     }
 
-    @IBAction func signIn(_ sender: Any) {   // shows content of texfields in terminal
+    @IBAction func signIn(_ sender: Any) {   // shows content of texfields in console
         print(usernameTextFeild.text!)
         print(passwordTextField.text!)
     }
